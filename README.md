@@ -1,6 +1,8 @@
 # Experiment HTTPxMQTT
 
-A simple experiment application to post some data to a remote server using both MQTT and HTTP protocols, save results to a .csv file and compare them using a Jupyter Notebook visualization with Matplotlib.
+A simple experiment application to post some data to a remote server using both MQTT and HTTP protocols, save results to a .csv file and compare them using a Jupyter Notebook visualization with Matplotlib. 
+
+The experiment uses both a free and open to the [public MQTT broker](http://test.mosquitto.org) and an [open HTTP REST API](http://jsonplaceholder.typicode.com) that can be found at the following URLs:
 
 To run the experiment you will need:
 1. Python3
