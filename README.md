@@ -7,6 +7,7 @@ To run the experiment you will need:
 2. Jupyter noteebok
 
 On the root folder run the following command on a terminal to run the experiment
+
 `python3 setup.py install && python3 runner.py`
 
 After that tou can run the jupyter notebook to generate the visualization.
