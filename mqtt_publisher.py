@@ -12,10 +12,11 @@ import csv
 import os
 
 class MqttPublisher:
+	PROTOCOL="MQTT"
 	PUBLISH_TIME=None
 	ACK_TIME=None
 	client=None
-	RESULTS_FILE="results_mqtt/results.csv"
+	RESULTS_FILE="results/results.csv"
 	def __init__(self, message, host, port, transport, file_name, iteration):
 		# The message that shall be published
 		self.message = message
@@ -56,5 +57,5 @@ class MqttPublisher:
 		print("Writing results for publishing %s to %s\n" % (self.file_name, self.RESULTS_FILE))
 		with open(self.RESULTS_FILE, 'a') as csvFile:
 			writer = csv.writer(csvFile)
-			writer.writerow([file_size, duration_micro, size_name, iteration])
+			writer.writerow([self.PROTOCOL, file_size, duration_micro, size_name, iteration])
 		csvFile.close()

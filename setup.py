@@ -22,7 +22,11 @@ VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'paho-mqtt==1.5.0'
+    'paho-mqtt==1.5.0',
+    'requests==2.7.0',
+    'pandas==0.25.3',
+    'numpy==1.17.4',
+    'matplotlib==2.2.4'
     # 'requests', 'maya', 'records',
 ]
 
